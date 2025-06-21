@@ -20,7 +20,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
   - Trophy showcase  
 
 - 🔍 **Search, Sort, and Filter Repositories**  
-  - Search by repository name  
+  - Search by repository name   
   - Sort by stars or last updated  
   - Filter by programming language  
 
