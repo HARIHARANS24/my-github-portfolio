@@ -37,7 +37,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
 
 ## 🚀 Live Demo
 
-🔗 [Visit My Portfolio](https://hariharans24.github.io/portfolio-hariharans24/)
+🔗 [Visit My Portfolio](https://hariharans24.github.io/my-github-portfolio/)
 
 ---
 
@@ -66,7 +66,8 @@ portfolio-hariharans24/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/HARIHARANS24/portfolio-hariharans24.git
+   git clone https://github.com/HARIHARANS24/my-github-portfolio.git
+   cd  my-github-portfolio
    ```
 
 2. **Open `index.html` in a browser**  
