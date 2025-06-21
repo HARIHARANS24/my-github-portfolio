@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HARIHARANS24 - GitHub Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #f4f4f4;
+      --bg-dark: #121212;
+      --text-light: #000;
+      --text-dark: #fff;
+      --card-bg-light: #fff;
+      --card-bg-dark: #1e1e1e;
+      --accent: #0366d6;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      margin: 0;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile img.avatar {
+      width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .profile img.avatar:hover {
+      transform: scale(1.05);
+    }
+
+    .profile h1 {
+      margin: 10px 0 5px;
+    }
+
+    .profile p {
+      font-size: 0.95em;
+    }
+
+    .stats {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .widgets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .widgets img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .widgets img:hover {
+      transform: scale(1.03);
+    }
+
+    .repo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .repo-card {
+      background: var(--card-bg-light);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, background 0.3s, color 0.3s;
+    }
+
+    body.dark .repo-card {
+      background: var(--card-bg-dark);
+      color: var(--text-dark);
+    }
+
+    .repo-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .repo-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .repo-description {
+      margin-bottom: 12px;
+    }
+
+    .repo-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+    }
+
+    .language-badge {
+      padding: 2px 8px;
+      background: #eef;
+      border-radius: 20px;
+      font-size: 0.75em;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .toggle-btn {
+      background: var(--accent);
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .filter-select {
+      padding: 6px 12px;
+      font-size: 1em;
+      margin: 0 5px;
+    }
+
+    .resume-link {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .resume-link a {
+      background: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .resume-link a:hover {
+      background: #218838;
+    }
+
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .controls input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleTheme()">🌗 Toggle Light/Dark Mode</button>
+
+  <div id="profile" class="profile"></div>
+
+  <div class="resume-link">
+    <a href="https://drive.google.com/file/d/1wK1fHbVqI_W0z5Tk5epdzv2pjoHiqaYJ/view?usp=drive_link" target="_blank">
+      📄 Download Resume
+    </a>
+  </div>
+
+  <div class="widgets">
+
+   <!-- LinkedIn Profile Badge -->
+   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+   <div class="badge-base LI-profile-badge" 
+        data-locale="en_US" 
+        data-size="medium" 
+        data-theme="dark" 
+        data-type="HORIZONTAL" 
+        data-vanity="hariharan-s24" 
+        data-version="v1">
+     <a class="badge-base__link LI-simple-link" 
+        href="https://in.linkedin.com/in/hariharan-s24?trk=profile-badge"></a>
+   </div>
+
+    <!-- GitHub Streak -->
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=HARIHARANS24&theme=dark" alt="GitHub Streaks" />
+  
+    <!-- GitHub Stats -->
+    <img src="https://github-readme-stats.vercel.app/api?username=HARIHARANS24&theme=radical" alt="GitHub Stats" />
+  
+    <!-- Top Languages -->
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HARIHARANS24&layout=compact&theme=radical" alt="Top Languages" />
+  
+    <!-- GitHub Overview & Languages -->
+    <img src="https://raw.githubusercontent.com/HARIHARANS24/github-stats/master/generated/overview.svg#gh-dark-mode-only" alt="GitHub Overview" />
+    <img src="https://raw.githubusercontent.com/HARIHARANS24/github-stats/master/generated/languages.svg#gh-dark-mode-only" alt="Languages by Size" />
+  
+    <!-- GitHub Trophies -->
+    <img src="https://github-profile-trophy.vercel.app/?username=hariharans24&theme=algolia" alt="GitHub Trophies" />
+  
+    <!-- GitHub Activity Graph -->
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=HARIHARANS24&radius=16&theme=react&area=true&order=5" height="300" alt="GitHub Activity Graph" />
+  
+    <!-- Contribution Graph (Pac-Man Style) -->
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HARIHARANS24/HARIHARANS24/output/pacman-contribution-graph-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HARIHARANS24/HARIHARANS24/output/pacman-contribution-graph.svg">
+      <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/HARIHARANS24/HARIHARANS24/output/pacman-contribution-graph.svg">
+    </picture>
+  
+  </div>
+  
+
+  <h2>My GitHub Repositories</h2>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="🔍 Search repositories..." />
+    <select id="sortSelect" class="filter-select">
+      <option value="default">Sort By</option>
+      <option value="stars">⭐ Stars</option>
+      <option value="updated">⏱ Last Updated</option>
+    </select>
+    <select id="languageFilter" class="filter-select">
+      <option value="all">Show All Languages</option>
+    </select>
+  </div>
+
+  <div id="repoContainer" class="repo-container"></div>
+
+  <script>
+    const username = "HARIHARANS24";
+    const profileContainer = document.getElementById("profile");
+    const repoContainer = document.getElementById("repoContainer");
+    const languageFilter = document.getElementById("languageFilter");
+    const searchInput = document.getElementById("searchInput");
+    const sortSelect = document.getElementById("sortSelect");
+
+    let allReposCache = [];
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+
+    async function loadProfile() {
+      try {
+        const res = await fetch(`https://api.github.com/users/${username}`);
+        const user = await res.json();
+
+        profileContainer.innerHTML = `
+          <img src="${user.avatar_url}" alt="${user.login}" class="avatar" />
+          <h1>${user.name || user.login}</h1>
+          <p>${user.bio || ""}</p>
+          <div class="stats">
+            👥 ${user.followers} followers • 🔄 ${user.following} following • 📦 ${user.public_repos} repos
+          </div>
+          <div class="views">
+            <img src="https://komarev.com/ghpvc/?username=${username}&color=blue" alt="Profile Views" />
+          </div>
+        `;
+      } catch (err) {
+        profileContainer.innerHTML = "<p>Could not load profile info.</p>";
+        console.error("Error fetching profile:", err);
+      }
+    }
+
+    async function fetchAllRepos() {
+      let allRepos = [];
+      let page = 1;
+      const perPage = 100;
+
+      while (true) {
+        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=${perPage}&page=${page}`);
+        const repos = await response.json();
+        if (!Array.isArray(repos) || repos.length === 0) break;
+        allRepos = allRepos.concat(repos);
+        page++;
+      }
+
+      return allRepos;
+    }
+
+    async function renderRepos() {
+      try {
+        if (!allReposCache.length) {
+          allReposCache = await fetchAllRepos();
+
+          // Populate language filter once
+          const languages = new Set();
+          allReposCache.forEach(repo => repo.language && languages.add(repo.language));
+          [...languages].sort().forEach(lang => {
+            const option = document.createElement("option");
+            option.value = lang;
+            option.textContent = lang;
+            languageFilter.appendChild(option);
+          });
+        }
+
+        const selectedLang = languageFilter.value;
+        const searchQuery = searchInput.value.toLowerCase();
+        const sortBy = sortSelect.value;
+
+        let filteredRepos = allReposCache.filter(repo => {
+          const matchesLang = selectedLang === "all" || repo.language === selectedLang;
+          const matchesSearch = repo.name.toLowerCase().includes(searchQuery);
+          return matchesLang && matchesSearch;
+        });
+
+        if (sortBy === "stars") {
+          filteredRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+        } else if (sortBy === "updated") {
+          filteredRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        }
+
+        repoContainer.innerHTML = "";
+
+        filteredRepos.forEach(repo => {
+          const card = document.createElement("div");
+          card.className = "repo-card";
+          card.setAttribute("data-language", repo.language || "Unknown");
+
+          card.innerHTML = `
+            <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
+            <div class="repo-description">${repo.description || "No description available."}</div>
+            ${repo.homepage ? `<div><a href="${repo.homepage}" target="_blank" style="color: green;">🔗 Live Demo</a></div>` : ""}
+            <div class="repo-meta">
+              <div>⭐ ${repo.stargazers_count}</div>
+              ${repo.language ? `<div class="language-badge">${repo.language}</div>` : ""}
+            </div>
+            <div class="info-line">
+              👀 ${repo.watchers_count} watchers • 🛠 ${repo.license?.name || "No license"}<br>
+              ⏱ Updated: ${new Date(repo.updated_at).toLocaleDateString()}
+            </div>
+          `;
+          repoContainer.appendChild(card);
+        });
+
+      } catch (err) {
+        repoContainer.innerHTML = "<p>Failed to load repositories.</p>";
+        console.error("Error fetching repos:", err);
+      }
+    }
+
+    searchInput.addEventListener("input", renderRepos);
+    sortSelect.addEventListener("change", renderRepos);
+    languageFilter.addEventListener("change", renderRepos);
+
+    loadProfile();
+    renderRepos();
+  </script>
+</body>
+</html>
