@@ -6,7 +6,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
 
 ## 📌 Features 
 
-- 🌗 **Dark/Light Mode Toggle**  
+- 🌗 **Dark/Light Mode Toggle** 
   Easily switch between light and dark themes.
 
 - 🧑‍💻 **Dynamic GitHub Profile Display**  
