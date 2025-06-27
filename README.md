@@ -17,7 +17,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
   - Stats card (stars, commits, PRs, etc.)  
   - Top programming languages  
   - Contribution graphs in various styles  
-  - Trophy showcase  
+  - Trophy showcase   
 
 - 🔍 **Search, Sort, and Filter Repositories**  
   - Search by repository name   
