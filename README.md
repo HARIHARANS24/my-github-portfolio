@@ -14,7 +14,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
 
 - 📊 **GitHub Stats Widgets**  
   - Contribution streak graph  
-  - Stats card (stars, commits, PRs, etc.) 
+  - Stats card (stars, commits, PRs, etc.)  
   - Top programming languages  
   - Contribution graphs in various styles  
   - Trophy showcase  
