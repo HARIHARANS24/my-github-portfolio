@@ -3,7 +3,7 @@
 This is a personal GitHub portfolio website built using HTML, CSS, and JavaScript. It dynamically fetches and displays real-time data from my GitHub profile using the GitHub REST API and includes multiple widgets, visual stats, and interactive features.
 
 ---
-
+ 
 ## 📌 Features  
 
 - 🌗 **Dark/Light Mode Toggle** 
