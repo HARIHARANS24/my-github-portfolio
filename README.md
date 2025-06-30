@@ -13,7 +13,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
   Auto-fetches and displays profile picture, bio, followers, public repositories, and more.
 
 - 📊 **GitHub Stats Widgets**  
-  - Contribution streak graph  
+  - Contribution streak graph   
   - Stats card (stars, commits, PRs, etc.)  
   - Top programming languages  
   - Contribution graphs in various styles  
