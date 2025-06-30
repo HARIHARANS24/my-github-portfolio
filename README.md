@@ -71,7 +71,7 @@ portfolio-hariharans24/
    ```
 
 2. **Open `index.html` in a browser**  
-   Or deploy it using GitHub Pages for online access.
+   Or deploy it using GitHub Pages for online access. 
 
 3. **Customize**  
    - Update resume link
