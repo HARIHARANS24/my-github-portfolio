@@ -11,7 +11,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
   
 - 🧑‍💻 **Dynamic GitHub Profile Display**   
   Auto-fetches and displays profile picture, bio, followers, public repositories, and more. 
- 
+  
 - 📊 **GitHub Stats Widgets**    
   - Contribution streak graph   
   - Stats card (stars, commits, PRs, etc.)  
