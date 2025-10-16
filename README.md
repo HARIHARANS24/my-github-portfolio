@@ -10,7 +10,7 @@ This is a personal GitHub portfolio website built using HTML, CSS, and JavaScrip
   Easily switch between light and dark themes.
   
 - 🧑‍💻 **Dynamic GitHub Profile Display**   
-  Auto-fetches and displays profile picture, bio, followers, public repositories, and more.
+  Auto-fetches and displays profile picture, bio, followers, public repositories, and more. 
  
 - 📊 **GitHub Stats Widgets**    
   - Contribution streak graph   
